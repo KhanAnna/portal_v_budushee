@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}?{% now 'U' %}" type="text/css">
+
+    <title>
+        {% block title %}
+        Портал в будущее
+        {% endblock title %}
+    </title>
+</head>
+<body>
+<div>
+        <div class="imgfull">
+        <div class="navbar">
+            <a href="{% url 'main:home' %}">Главная страница</a>
+            <a href="{% url 'main:news' %}">Новости</a>
+            <a href="{% url 'main:about_university' %}">Студенты о вузах</a>
+            <a href="{% url 'main:chats_university' %}">Беседы вузов</a>
+            <a href="#">Личный кабинет</a>
+            <a href="#"><img width="20" height="20" src="{% static 'images/search.png' %}" alt="Preamps - White Search Icon Svg @clipartmax.com"></a>
+        </div>
+        <div class="nav__bg__start"></div>
+        <div class="nav__bg"></div>
+        <div class="wrapper"></div>
+            <span>
+                {% block main_title %}
+                    Портал в будущее
+                {% endblock %}
+            </span>
+        </div>
+</div>
+        {% block content %}
+        {% endblock %}
+    <footer>
+    </footer>
+</body>
+
+</html>

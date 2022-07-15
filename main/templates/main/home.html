@@ -1,0 +1,59 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Главная страница {% endblock %}
+{% block main_title %} Портал в будущее {% endblock %}
+{% block content %}
+<div>
+<div class="about-me">
+    <ul>
+        <li class="block-1">
+                <a href="#"><img src="{% static 'images/talk.jpg' %}" class="imgleft" alt=""
+    title=""/></a>
+            <div class="postsright">
+                <h3 class="post-title-home">Общайся</h3>
+                    <p class="home">
+                        Веди беседы со студентами топовых вузов на интересующие тебя темы.
+                    </p>
+            </div>
+        </li>
+
+        <li class="block-2">
+                <a href="#"><img src="{% static 'images/learn.jpg' %}" class="imgright" alt=""
+    title=""/></a>
+            <div class="postsleft">
+                <h3 class="post-title-home">Узнавай из первых рук</h3>
+                    <p class="home">
+                        Приходи на онлайн встречи с приглашёнными успешными людьми из разных профессий и задавай
+                        интересующие тебя вопросы, узнай как на самом деле устроена работа в той или иной
+                        профессии, её актуальность, оплачиваемость и востребованность на рынке труда.
+                    </p>
+            </div>
+        </li>
+
+        <li class="block-1">
+                <a href="#"><img src="{% static 'images/choose.png' %}" class="imgleft" alt=""
+    title=""/></a>
+            <div class="postsright">
+                <h3 class="post-title-home">Выбирай с умом</h3>
+                    <p class="home">
+                        Закончил школу, но не можешь определиться с выбором вуза и направления? Здесь ты
+                        получишь более чёткий взгляд о внутреннем устройстве вузов и сможешь правильно подобрать
+                        себе учебное заведение.
+                    </p>
+            </div>
+        </li>
+        <li class="block-2">
+                <a href="#"><img src="{% static 'images/join.jpg' %}" class="imgright" alt=""
+    title=""/></a>
+            <div class="postsleft">
+                <h3 class="post-title-home">Развлекайся и проводи время с пользой</h3>
+                    <p class="home">
+                        Узнавай о всех актуальных студенческих мероприятиях, конкурсах и вечеринках
+                    </p>
+            </div>
+        </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
